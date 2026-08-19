@@ -92,7 +92,7 @@ cd frontend
 npm install
 npm run dev
 ```
-*Frontend runs on `http://localhost:5173` with proxy to backend.*
+Frontend runs on http://localhost:5173 and connects to the deployed Express backend through VITE_API_URL.
 
 ---
 
