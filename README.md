@@ -93,6 +93,7 @@ npm install
 npm run dev
 ```
 Frontend runs on http://localhost:5173 and connects to the deployed Express backend through VITE_API_URL.
+It is deployed by Vercel and the live link is https://safe-pulse-ashy.vercel.app/
 
 ---
 
