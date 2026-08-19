@@ -17,7 +17,7 @@ export default function App() {
     setErrorMessage(null);
 
     try {
-      const response = await fetch("/api/analyze", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/analyze`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -25,7 +25,15 @@ export default function App() {
         body: JSON.stringify({ situation: situationText }),
       });
 
-      const result = await response.json();
+      const text = await response.text();
+
+      let result;
+
+      try {
+        result = text ? JSON.parse(text) : {};
+      } catch {
+        throw new Error("Server returned an invalid response.");
+      }
 
       if (!response.ok) {
         throw new Error(result.error || "Failed to analyze situation");
