@@ -3,6 +3,7 @@
 > Built for the **SafetyNet Hackathon** 🚀
 
 **SafePulse** is an AI-powered personal safety co-pilot designed to protect users during vulnerable or high-risk situations (such as solo travel at night, unfamiliar routes, or suspicious encounters).
+I MADE IT BY USING ANTIGRAVITY IDE BECAUSE IT IS THE PART OF HACKATHON ORGANIZED BY GOOGLE DEVELOPER GROUPS OF CAMPUS MM(DU) AND HACK2SKILLS.
 
 ---
 
